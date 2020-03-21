@@ -1,2 +1,0 @@
-# BasicGame
-Created with CodeSandbox
