@@ -42,6 +42,10 @@ export default class Game {
       this.gameState !== GAMESTATE.NEWLEVEL
     )
       return;
+
+    if (this.currentLevel >= 1) {
+      this.ball.speed = { x: 4, y: -4 };
+    }
     // build the level
     this.bricks = buildLevel(this, this.levels[this.currentLevel]);
     this.ball.reset();
