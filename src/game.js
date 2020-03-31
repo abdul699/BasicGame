@@ -42,7 +42,7 @@ export default class Game {
       this.gameState !== GAMESTATE.NEWLEVEL
     )
       return;
-
+    //  increase ball speed if level is not 0
     if (this.currentLevel >= 1) {
       this.ball.speed = { x: 4, y: -4 };
     }
